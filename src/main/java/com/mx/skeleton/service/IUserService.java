@@ -3,7 +3,12 @@ package com.mx.skeleton.service;
 import com.mx.skeleton.domain.User;
 
 /**
- * @author Miguel Camacho
+ * @ProjectName: skeleton-java
+ * @Package: com.mx.skeleton.service
+ * @ClassName:
+ * @Author:
+ * @Description:
+ * @Date:
  */
 public interface IUserService {
 

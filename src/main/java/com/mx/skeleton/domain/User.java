@@ -13,7 +13,14 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
-@AllArgsConstructor
+/**
+ * @ProjectName: skeleton-java
+ * @Package: com.mx.skeleton.domain
+ * @ClassName:
+ * @Author:
+ * @Description:
+ * @Date:
+ */
 @Entity
 @Table(name = "user")
 public class User implements Serializable {
