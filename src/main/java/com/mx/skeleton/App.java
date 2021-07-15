@@ -2,6 +2,7 @@ package com.mx.skeleton;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -12,6 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @Description: App initial run
  * @Date: 2020-14-07
  */
+@EnableScheduling
 @EnableTransactionManagement
 @SpringBootApplication
 public class App {

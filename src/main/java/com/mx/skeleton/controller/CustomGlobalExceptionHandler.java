@@ -14,6 +14,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * @ProjectName: skeleton-java
+ * @Package: com.mx.skeleton
+ * @ClassName: App
+ * @Author: Miguel Camacho
+ * @Description: App initial run
+ * @Date: 2020-14-07
+ */
 @ControllerAdvice
 public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler {
 

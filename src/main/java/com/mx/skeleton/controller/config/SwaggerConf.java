@@ -14,6 +14,14 @@ import static io.swagger.models.auth.In.HEADER;
 import static java.util.Collections.singletonList;
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 
+/**
+ * @ProjectName: skeleton-java
+ * @Package: com.mx.skeleton
+ * @ClassName: App
+ * @Author: Miguel Camacho
+ * @Description: App initial run
+ * @Date: 2020-14-07
+ */
 @Configuration
 @EnableSwagger2
 public class SwaggerConf {
