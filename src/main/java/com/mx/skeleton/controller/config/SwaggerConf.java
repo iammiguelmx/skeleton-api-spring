@@ -1,4 +1,4 @@
-package com.mx.skeleton.web.controller.config;
+package com.mx.skeleton.controller.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

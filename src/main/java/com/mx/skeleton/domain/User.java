@@ -1,5 +1,6 @@
-package com.mx.skeleton.persistence.entity;
+package com.mx.skeleton.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -12,6 +13,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
+@AllArgsConstructor
 @Entity
 @Table(name = "user")
 public class User implements Serializable {
