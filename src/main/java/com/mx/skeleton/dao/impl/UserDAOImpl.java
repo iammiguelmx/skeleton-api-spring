@@ -1,7 +1,7 @@
 package com.mx.skeleton.dao.impl;
 
 import com.mx.skeleton.dao.IUserDAO;
-import com.mx.skeleton.domain.User;
+import com.mx.skeleton.model.User;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 

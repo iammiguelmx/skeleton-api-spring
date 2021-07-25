@@ -1,6 +1,6 @@
 package com.mx.skeleton.service;
 
-import com.mx.skeleton.domain.BitacorraError;
+import com.mx.skeleton.model.BitacorraError;
 
 public interface IBitacoraErrorService {
 

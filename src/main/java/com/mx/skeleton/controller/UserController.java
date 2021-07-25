@@ -1,6 +1,6 @@
 package com.mx.skeleton.controller;
 
-import com.mx.skeleton.domain.User;
+import com.mx.skeleton.model.User;
 import com.mx.skeleton.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

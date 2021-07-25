@@ -1,7 +1,7 @@
 package com.mx.skeleton.dao.impl;
 
 import com.mx.skeleton.dao.IBitacoraDAO;
-import com.mx.skeleton.domain.BitacorraError;
+import com.mx.skeleton.model.BitacorraError;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 

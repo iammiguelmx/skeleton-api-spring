@@ -1,4 +1,4 @@
-package com.mx.skeleton.domain;
+package com.mx.skeleton.model;
 
 
 import lombok.Getter;

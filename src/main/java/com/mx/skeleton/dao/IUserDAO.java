@@ -1,6 +1,6 @@
 package com.mx.skeleton.dao;
 
-import com.mx.skeleton.domain.User;
+import com.mx.skeleton.model.User;
 
 import java.util.List;
 
