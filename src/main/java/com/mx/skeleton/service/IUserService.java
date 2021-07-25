@@ -2,6 +2,8 @@ package com.mx.skeleton.service;
 
 import com.mx.skeleton.domain.User;
 
+import java.util.List;
+
 /**
  * @ProjectName: skeleton-java
  * @Package: com.mx.skeleton.service
@@ -12,6 +14,8 @@ import com.mx.skeleton.domain.User;
  */
 public interface IUserService {
 
-    User save(User user);
+    void save(User user);
+
+    List<User> getAll();
 
 }
