@@ -6,8 +6,15 @@ import java.util.List;
 
 public interface IUserDAO {
 
+    //Save user
     void save(User user);
 
+    //Update Password
+    void updatePassword(String password, Long userId);
+
     List<User> getAll();
+
+    //Find user by username
+    User findUserByUserName(String username);
 
 }

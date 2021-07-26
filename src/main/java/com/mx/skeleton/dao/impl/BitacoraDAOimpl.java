@@ -12,7 +12,7 @@ import javax.transaction.Transactional;
 
 @Repository
 @Transactional
-public class BitacoraDAO implements IBitacoraDAO {
+public class BitacoraDAOimpl implements IBitacoraDAO {
 
     @PersistenceContext
     private EntityManager entityManager;

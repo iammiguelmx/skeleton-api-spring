@@ -1,7 +1,13 @@
 package com.mx.skeleton.controller.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import springfox.documentation.service.ApiKey;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -23,8 +29,15 @@ import static org.springframework.http.HttpHeaders.AUTHORIZATION;
  * @Date: 2020-14-07
  */
 @Configuration
+@EnableWebSecurity
 @EnableSwagger2
-public class SwaggerConf {
+public class SwaggerConf extends WebSecurityConfigurerAdapter {
+
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
 
     @Bean
     public Docket jsonApi() {
@@ -44,5 +57,28 @@ public class SwaggerConf {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.mx.skeleton"))
                 .build();
+    }
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+
+        String loginPage = "/login";
+        String logoutPage = "/logout";
+
+        http.
+                authorizeRequests()
+                .antMatchers("/","/webjars/**").permitAll()
+                .antMatchers("/user/*").permitAll()
+                .antMatchers("/registration","/verify-email","/forgot-password","/reset-password").permitAll()
+                .antMatchers("/admin/**").hasAuthority("ADMIN").anyRequest()
+                .authenticated().and().csrf().disable().formLogin()
+                .loginPage("/login").failureUrl("/login?error=true")
+                .defaultSuccessUrl("/admin/home")
+                .usernameParameter("user_name")
+                .passwordParameter("password")
+                .and().logout()
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutSuccessUrl("/login").and().exceptionHandling()
+                .accessDeniedPage("/access-denied");
     }
 }

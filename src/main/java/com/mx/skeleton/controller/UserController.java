@@ -45,7 +45,7 @@ public class UserController {
         try {
             iUserService.save(user);
         } catch (DataAccessException e){
-            params.put("message", "Se produjo un error al consultar en la base de datos.");
+            params.put("message", "Se produjo un error al insertar en la base de datos.");
             params.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
             return new ResponseEntity<>(params, HttpStatus.INTERNAL_SERVER_ERROR);
         }

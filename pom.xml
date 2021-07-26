@@ -38,6 +38,13 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<!-- tag::dependency[security] -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- tag::dependency[security] -->
+
 		<!-- tag::dependency[actuator] -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -75,15 +82,6 @@
 			<version>7.0.0.Final</version>
 		</dependency>
 		<!-- tag::dependency[hibernate-validator] -->
-
-		<!-- tag::dependency[hibernate-optimizer] -->
-		<dependency>
-			<groupId>io.hypersistence</groupId>
-			<artifactId>hypersistence-optimizer</artifactId>
-			<version>1.2.0</version>
-		</dependency>
-		<!-- tag::dependency[hibernate-optimizer] -->
-
 
 		<!-- tag::dependency[mysql] -->
 		<dependency>
