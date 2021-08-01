@@ -1,6 +1,6 @@
-package com.mx.skeleton.dao.impl;
+package com.mx.skeleton.repositoty.impl;
 
-import com.mx.skeleton.dao.IBitacoraDAO;
+import com.mx.skeleton.repositoty.IBitacoraDAO;
 import com.mx.skeleton.model.BitacorraError;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;

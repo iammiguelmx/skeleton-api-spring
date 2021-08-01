@@ -1,12 +1,11 @@
-package com.mx.skeleton.dao.impl;
+package com.mx.skeleton.repositoty.impl;
 
-import com.mx.skeleton.dao.IUserDAO;
+import com.mx.skeleton.repositoty.IUserDAO;
 import com.mx.skeleton.model.Role;
 import com.mx.skeleton.model.User;
 import com.mx.skeleton.service.IRoleService;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Repository;
 

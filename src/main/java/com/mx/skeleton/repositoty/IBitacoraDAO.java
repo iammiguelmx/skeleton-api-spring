@@ -1,4 +1,4 @@
-package com.mx.skeleton.dao;
+package com.mx.skeleton.repositoty;
 
 import com.mx.skeleton.model.BitacorraError;
 

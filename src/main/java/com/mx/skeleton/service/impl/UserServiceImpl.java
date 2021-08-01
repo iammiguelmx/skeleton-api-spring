@@ -1,7 +1,7 @@
 package com.mx.skeleton.service.impl;
 
-import com.mx.skeleton.dao.IUserDAO;
-import com.mx.skeleton.dao.impl.RolDAOImpl;
+import com.mx.skeleton.repositoty.IUserDAO;
+import com.mx.skeleton.repositoty.impl.RolDAOImpl;
 import com.mx.skeleton.model.User;
 import com.mx.skeleton.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
