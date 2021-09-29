@@ -35,7 +35,7 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "user_id")
-    private int id;
+    private Long id;
 
     @Length(min = 4, message = "*Your user name must have at least 4 characters")
     @NotEmpty(message = "*Please provide a user name")
